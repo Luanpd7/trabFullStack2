@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+</head>
+
+<body>
+
+    
+    <!-- Barra Superior -->
+    <div class="barra-superior">
+        <div class="title">
+            <h3>Imagem</h3>
+            <h1>Biblioteca Senac Blumenau</h1>
+        </div>
+        <div class="informacoes">
+            <h2>Contato</h2>
+            <h2>Sobre</h2>
+        </div>
+    </div>
+
+    <div class="container-input">
+        <div class="container-input-superior">
+            <h3 class="container-input-titulo">Cadastro</h3>
+        </div>
+
+        <div class="container-input-inferior">
+            <div class="container-inferior-column">
+                <div class="container-columns">
+                    <div class="container-inferior-column">
+                        <label for="titulo">Título do Livro</label>
+                        <input type="text" name="titulo" id="titulo">
+                        <label for="autor">Autor do Livro</label>
+                        <input type="text" name="autor" id="autor">
+                        <label for="editora">Editora</label>
+                        <input type="text" name="editora" id="editora">
+                    </div>
+
+                    <div class="container-inferior-column">
+                        <label for="genero">Gênero</label>
+                        <input type="text" name="genero" id="genero">
+                        <label for="prateleira">Prateleira</label>
+                        <input type="text" name="prateleira" id="prateleira">
+                        <label for="coluna">Coluna</label>
+                        <input type="text" name="coluna" id="coluna">
+                    </div>
+                </div>
+
+                <div class="container-inferior-botoes">
+                    <button type="button">Cancelar</button>
+                    <button type="button" onclick="submitForm()">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/addScript.js"></script>
+    <script>
+        // Carregar e exibir livros ao carregar a página de consulta
+        window.onload = exibirLivros;
+        window.onload = exibirLivrosEmprestado;
+    </script>
+</body>
+
+</html>
