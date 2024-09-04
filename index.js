@@ -1,3 +1,3 @@
 window.onload = function() {
-  console.log('teste');
+  window.location.href = "/trabFullStack2/pages/home.html"
 };
